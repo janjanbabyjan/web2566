@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <title>A-Frame</title>
+</head>
+
+<body>
+    <a-scene>
+        <a-box position="-1 0.5 -3" rotation="0 45 0"
+            animation="property: rotation; to: 0 405 0; loop: true; dur: 5000">
+            <!-- Front -->
+            <a-entity position="0 0 0.51">
+                <a-image src="work1/me.jpg" height="1" width="1"></a-image>
+            </a-entity>
+            <!-- Back -->
+            <a-entity position="0 0 -0.51" rotation="0 180 0">
+                <a-image src="work1/me.jpg" height="1" width="1"></a-image>
+            </a-entity>
+            <!-- Top -->
+            <a-entity position="0 0.51 0" rotation="-90 0 0">
+                <a-image src="work1/me.jpg" height="1" width="1"></a-image>
+            </a-entity>
+            <!-- Bottom -->
+            <a-entity position="0 -0.51 0" rotation="90 0 0">
+                <a-image src="work1/me.jpg" height="1" width="1"></a-image>
+            </a-entity>
+            <!-- Left -->
+            <a-entity position="-0.51 0 0" rotation="0 -90 0">
+                <a-image src="work1/me.jpg" height="1" width="1"></a-image>
+            </a-entity>
+            <!-- Right -->
+            <a-entity position="0.51 0 0" rotation="0 90 0">
+                <a-image src="work1/me.jpg" height="1" width="1"></a-image>
+            </a-entity>
+        </a-box>
+
+        <a-sky src="work1/pu.jpg"></a-sky>
+        <a-text value=" Supattra Pangjun 643021342-5" position="-1 2 -3" color="white"
+            animation="property: position; to: -1.53 2 -1; dur: 1000; easing: easeInOutQuad"></a-text>
+
+
+    </a-scene>
+</body>
+
+</html>
